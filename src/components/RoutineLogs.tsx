@@ -102,7 +102,7 @@ export function RoutineLogs() {
           <div className="p-4 rounded-lg bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200">
             <h4 className="text-purple-900 mb-2">AI Insight</h4>
             <p className="text-gray-700 text-sm">
-              Emma's sleep pattern is excellent. She's consistently meeting recommended sleep duration for her age (10-12 hours). Consider maintaining the current bedtime routine.
+              Odaisa's sleep pattern is excellent. She's consistently meeting recommended sleep duration for her age (10-12 hours). Consider maintaining the current bedtime routine.
             </p>
           </div>
         </TabsContent>

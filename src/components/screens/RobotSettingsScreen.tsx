@@ -276,7 +276,7 @@ export function RobotSettingsScreen({ onClose }: RobotSettingsScreenProps) {
               {/* Voice Tone */}
               <div className="space-y-3">
                 <Label>Voice Tone</Label>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3">
                   {["friendly", "cheerful", "calm"].map((tone) => (
                     <button
                       key={tone}

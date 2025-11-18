@@ -23,7 +23,7 @@ export function AlertsScreen() {
       icon: TrendingUp,
       color: "green",
       title: "New Milestone Achieved!",
-      message: "Emma took 5 consecutive steps independently",
+      message: "Odaisa took 5 consecutive steps independently",
       time: "15 minutes ago",
       unread: true,
       priority: "high"
@@ -34,7 +34,7 @@ export function AlertsScreen() {
       icon: AlertCircle,
       color: "yellow",
       title: "Naptime Delayed",
-      message: "Emma's naptime is 20 minutes past scheduled time",
+      message: "Odaisa's naptime is 20 minutes past scheduled time",
       time: "32 minutes ago",
       unread: true,
       priority: "medium"
@@ -78,7 +78,7 @@ export function AlertsScreen() {
       icon: Activity,
       color: "green",
       title: "Activity Goal Reached",
-      message: "Emma has reached today's outdoor play goal of 2 hours",
+      message: "Odaisa has reached today's outdoor play goal of 2 hours",
       time: "3 hours ago",
       unread: false,
       priority: "low"
@@ -156,7 +156,7 @@ export function AlertsScreen() {
       </div>
 
       {/* Alert Statistics */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <Card className="p-4 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg">
           <div className="flex items-center justify-between mb-2">
             <Bell className="w-8 h-8 text-purple-500" />

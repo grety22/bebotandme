@@ -40,9 +40,9 @@ export function RoutinesScreen() {
           <h2 className="text-purple-900">Today's Remaining Schedule</h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3">
           {upcomingSchedule.map((item, index) => (
-            <div key={index} className={`p-4 rounded-lg ${
+            <div key={index} className={`p-3 sm:p-4 rounded-lg ${
               item.color === 'yellow' ? 'bg-yellow-50 border border-yellow-200' :
               item.color === 'green' ? 'bg-green-50 border border-green-200' :
               item.color === 'blue' ? 'bg-blue-50 border border-blue-200' :

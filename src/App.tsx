@@ -23,6 +23,7 @@ export type Screen =
 
 export default function App() {
   const [activeScreen, setActiveScreen] = useState<Screen>("overview");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const renderScreen = () => {
     switch (activeScreen) {
@@ -50,11 +51,19 @@ export default function App() {
   return (
     <LanguageProvider>
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-purple-50 flex">
-        <Sidebar activeScreen={activeScreen} onNavigate={setActiveScreen} />
+        <Sidebar 
+          activeScreen={activeScreen} 
+          onNavigate={(screen) => {
+            setActiveScreen(screen);
+            setSidebarOpen(false);
+          }}
+          isOpen={sidebarOpen}
+          onClose={() => setSidebarOpen(false)}
+        />
         
-        <main className="flex-1 ml-64">
-          <Header />
-          <div className="p-8">
+        <main className="flex-1 lg:ml-64 w-full">
+          <Header onMenuClick={() => setSidebarOpen(true)} />
+          <div className="p-4 sm:p-6 lg:p-8">
             {renderScreen()}
           </div>
         </main>

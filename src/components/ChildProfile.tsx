@@ -5,7 +5,7 @@ import { Calendar, Ruler, Weight } from "lucide-react";
 
 export function ChildProfile() {
   const childData = {
-    name: "Emma Johnson",
+    name: "Odaisa Alfonso",
     age: "2 years 4 months",
     dateOfBirth: "July 15, 2022",
     height: "89 cm",

@@ -40,32 +40,27 @@ export function GalleryScreen() {
       </div>
 
       {/* Collections Overview */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
         {collections.map((collection, index) => {
           const Icon = collection.icon;
-          const colorClasses = {
-            purple: 'from-purple-500 to-pink-500',
-            blue: 'from-blue-500 to-purple-500',
-            pink: 'from-pink-500 to-purple-500',
-            green: 'from-green-500 to-blue-500'
-          }[collection.color];
-
           return (
-            <Card key={index} className="p-4 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg hover:shadow-xl transition-all cursor-pointer">
-              <div className={`w-12 h-12 bg-gradient-to-br ${colorClasses} rounded-xl flex items-center justify-center mb-3`}>
-                <Icon className="w-6 h-6 text-white" />
+            <Card key={index} className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg hover:shadow-xl transition-all cursor-pointer">
+              <div className="flex flex-col items-center text-center">
+                <div className={`w-12 h-12 sm:w-16 sm:h-16 ${collection.color} rounded-xl flex items-center justify-center mb-3 sm:mb-4`}>
+                  <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                </div>
+                <h3 className="text-purple-900 mb-1 text-sm sm:text-base">{collection.name}</h3>
+                <p className="text-gray-600 text-xs sm:text-sm">{collection.count} items</p>
               </div>
-              <h3 className="text-purple-900 mb-1">{collection.name}</h3>
-              <p className="text-gray-600 text-sm">{collection.count} items</p>
             </Card>
           );
         })}
       </div>
 
-      {/* Recent Activity */}
-      <Card className="p-6 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg">
+      {/* Recent Captures */}
+      <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg">
         <h2 className="text-purple-900 mb-4">Recent Captures</h2>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {recentCaptures.map((item, index) => (
             <div key={index} className="p-4 rounded-lg bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-100 text-center">
               <p className="text-gray-600 text-sm mb-1">{item.date}</p>

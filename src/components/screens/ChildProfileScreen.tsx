@@ -22,7 +22,7 @@ export function ChildProfileScreen() {
   const [editDialogOpen, setEditDialogOpen] = useState(false);
   
   const childData = {
-    name: "Emma Johnson",
+    name: "Odaisa Alfonso",
     age: "2 years 4 months",
     dateOfBirth: "July 15, 2022",
     height: "89 cm",
@@ -348,7 +348,7 @@ export function ChildProfileScreen() {
         <TabsContent value="caregivers" className="mt-6">
           <Card className="p-6 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg">
             <h3 className="text-purple-900 mb-4">Authorized Caregivers</h3>
-            <p className="text-gray-600 mb-6">Manage who has access to Emma's dashboard and information</p>
+            <p className="text-gray-600 mb-6">Manage who has access to Odaisa's dashboard and information</p>
 
             <div className="space-y-3">
               {emergencyContacts.filter(c => c.primary).map((contact, index) => (

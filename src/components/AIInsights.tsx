@@ -10,7 +10,7 @@ export function AIInsights() {
       type: "recommendation",
       icon: Lightbulb,
       title: "Activity Recommendation",
-      description: "Based on Emma's progress, consider introducing simple counting games. She's showing advanced cognitive skills and is ready for numbers 1-10.",
+      description: "Based on Odaisa's progress, consider introducing simple counting games. She's showing advanced cognitive skills and is ready for numbers 1-10.",
       priority: "high",
       color: "yellow"
     },
@@ -19,7 +19,7 @@ export function AIInsights() {
       type: "achievement",
       icon: TrendingUp,
       title: "Language Development",
-      description: "Emma's vocabulary has grown by 15 new words this week! She's now using 2-3 word combinations consistently, which is excellent for her age.",
+      description: "Odaisa's vocabulary has grown by 15 new words this week! She's now using 2-3 word combinations consistently, which is excellent for her age.",
       priority: "success",
       color: "green"
     },
@@ -28,7 +28,7 @@ export function AIInsights() {
       type: "pattern",
       icon: Brain,
       title: "Sleep Pattern Analysis",
-      description: "AI detected consistent bedtime routine success. Emma falls asleep 15 minutes faster when story time is included. Consider maintaining this routine.",
+      description: "AI detected consistent bedtime routine success. Odaisa falls asleep 15 minutes faster when story time is included. Consider maintaining this routine.",
       priority: "info",
       color: "blue"
     },
@@ -138,7 +138,7 @@ export function AIInsights() {
               <h3>Ask the AI Assistant</h3>
             </div>
             <p className="text-white/90 text-sm mb-3">
-              Have questions about Emma's development? Ask our AI for personalized advice.
+              Have questions about Odaisa's development? Ask our AI for personalized advice.
             </p>
             <Button variant="secondary" className="bg-white text-purple-900 hover:bg-white/90">
               <MessageSquare className="w-4 h-4 mr-2" />

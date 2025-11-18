@@ -11,7 +11,7 @@ export function AlertsPanel() {
       icon: TrendingUp,
       color: "green",
       title: "New Milestone Achieved!",
-      message: "Emma took 5 consecutive steps independently",
+      message: "Odaisa took 5 consecutive steps independently",
       time: "15 minutes ago",
       unread: true
     },
@@ -21,7 +21,7 @@ export function AlertsPanel() {
       icon: AlertCircle,
       color: "yellow",
       title: "Naptime Delayed",
-      message: "Emma's naptime is 20 minutes past scheduled time",
+      message: "Odaisa's naptime is 20 minutes past scheduled time",
       time: "32 minutes ago",
       unread: true
     },

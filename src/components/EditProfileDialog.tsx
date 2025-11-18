@@ -17,7 +17,7 @@ export function EditProfileDialog({ open, onOpenChange }: EditProfileDialogProps
   const { t } = useLanguage();
   
   const [formData, setFormData] = useState({
-    name: "Emma Johnson",
+    name: "Odaisa Alfonso",
     dateOfBirth: "2022-07-15",
     height: "89",
     weight: "12.5",
@@ -44,12 +44,12 @@ export function EditProfileDialog({ open, onOpenChange }: EditProfileDialogProps
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl max-h-[90vh] p-0 gap-0 overflow-hidden flex flex-col">
-        <DialogHeader className="p-6 border-b border-purple-100 flex-shrink-0">
+      <DialogContent className="max-w-3xl max-h-[90vh] w-[95vw] sm:w-full p-0 gap-0 overflow-hidden flex flex-col">
+        <DialogHeader className="p-4 sm:p-6 border-b border-purple-100 flex-shrink-0">
           <DialogTitle className="text-purple-900">{t("profile.edit")}</DialogTitle>
         </DialogHeader>
 
-        <div className="space-y-6 py-4 px-6 overflow-y-auto modal-scrollbar flex-1">
+        <div className="space-y-4 sm:space-y-6 py-4 px-4 sm:px-6 overflow-y-auto modal-scrollbar flex-1">
           {/* Profile Photo */}
           <div className="flex items-center gap-6">
             <div className="relative">

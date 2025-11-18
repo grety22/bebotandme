@@ -33,7 +33,7 @@ export function InsightsScreen() {
       </div>
 
       {/* AI Performance Metrics */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         {aiMetrics.map((metric, index) => (
           <Card key={index} className="p-4 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg">
             <div className="flex items-center justify-between mb-2">
@@ -56,11 +56,11 @@ export function InsightsScreen() {
           <div className="flex-1">
             <h2 className="text-white mb-2">AI Parenting Assistant</h2>
             <p className="text-white/90 mb-4">
-              Ask me anything about Emma's development, routines, or get personalized parenting advice based on her data.
+              Ask me anything about Odaisa's development, routines, or get personalized parenting advice based on her data.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
               <Button variant="secondary" size="sm" className="bg-white/20 hover:bg-white/30 text-white border-0">
-                "What activities should Emma try?"
+                "What activities should Odaisa try?"
               </Button>
               <Button variant="secondary" size="sm" className="bg-white/20 hover:bg-white/30 text-white border-0">
                 "How is her sleep pattern?"
@@ -99,7 +99,7 @@ export function InsightsScreen() {
               <Badge className="bg-green-500 text-white border-0">Mastered</Badge>
             </div>
             <p className="text-gray-700 text-sm mb-2">
-              AI has successfully learned Emma's sleep patterns and can predict optimal bedtime with 96% accuracy.
+              AI has successfully learned Odaisa's sleep patterns and can predict optimal bedtime with 96% accuracy.
             </p>
             <div className="w-full h-2 bg-white rounded-full overflow-hidden">
               <div className="h-full bg-green-500" style={{ width: '96%' }}></div>
@@ -112,7 +112,7 @@ export function InsightsScreen() {
               <Badge className="bg-blue-500 text-white border-0">Learning</Badge>
             </div>
             <p className="text-gray-700 text-sm mb-2">
-              Currently analyzing Emma's engagement patterns across different activities to optimize recommendations.
+              Currently analyzing Odaisa's engagement patterns across different activities to optimize recommendations.
             </p>
             <div className="w-full h-2 bg-white rounded-full overflow-hidden">
               <div className="h-full bg-blue-500" style={{ width: '78%' }}></div>
@@ -125,7 +125,7 @@ export function InsightsScreen() {
               <Badge className="bg-purple-500 text-white border-0">Active</Badge>
             </div>
             <p className="text-gray-700 text-sm mb-2">
-              Predicting upcoming milestones based on Emma's current progress and historical data from similar age groups.
+              Predicting upcoming milestones based on Odaisa's current progress and historical data from similar age groups.
             </p>
             <div className="w-full h-2 bg-white rounded-full overflow-hidden">
               <div className="h-full bg-purple-500" style={{ width: '88%' }}></div>
@@ -143,7 +143,7 @@ export function InsightsScreen() {
           <div className="flex-1">
             <h3 className="text-purple-900 mb-2">Privacy & Data Security</h3>
             <p className="text-gray-700 mb-3">
-              All AI analysis is performed using encrypted data. Emma's information is never shared with third parties and you maintain full control over data usage.
+              All AI analysis is performed using encrypted data. Odaisa's information is never shared with third parties and you maintain full control over data usage.
             </p>
             <Button variant="outline" className="border-purple-200">
               View Privacy Settings

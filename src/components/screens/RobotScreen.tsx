@@ -13,7 +13,7 @@ export function RobotScreen() {
     status: "online",
     battery: 85,
     location: "Playroom",
-    currentActivity: "Following Emma",
+    currentActivity: "Following Odaisa",
     uptime: "5 hours 23 minutes",
     lastMaintenance: "Nov 10, 2024"
   };
@@ -161,21 +161,21 @@ export function RobotScreen() {
       {showSettings && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] shadow-2xl overflow-hidden flex flex-col">
-            <div className="bg-white border-b border-purple-100 p-6 flex items-center justify-between flex-shrink-0">
+            <div className="bg-white border-b border-purple-100 p-4 sm:p-6 flex items-center justify-between flex-shrink-0">
               <div>
                 <h2 className="text-purple-900">Robot Settings</h2>
-                <p className="text-sm text-gray-600">Configure your AI childcare assistant</p>
+                <p className="text-xs sm:text-sm text-gray-600">Configure your AI childcare assistant</p>
               </div>
               <Button 
                 variant="ghost" 
                 size="sm" 
                 onClick={() => setShowSettings(false)}
-                className="hover:bg-purple-100 rounded-full w-10 h-10 p-0 flex items-center justify-center"
+                className="hover:bg-purple-100 rounded-full w-8 h-8 sm:w-10 sm:h-10 p-0 flex items-center justify-center"
               >
-                <X className="w-5 h-5 text-purple-700" />
+                <X className="w-4 h-4 sm:w-5 sm:h-5 text-purple-700" />
               </Button>
             </div>
-            <div className="overflow-y-auto modal-scrollbar p-6 flex-1">
+            <div className="overflow-y-auto modal-scrollbar p-4 sm:p-6 flex-1">
               <RobotSettingsScreen onClose={() => setShowSettings(false)} />
             </div>
           </div>

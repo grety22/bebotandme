@@ -26,7 +26,7 @@ export function Overview() {
   ];
 
   const recentAlerts = [
-    { type: "milestone", message: "Emma took 5 consecutive steps!", time: "15 min ago", color: "green" },
+    { type: "milestone", message: "Odaisa took 5 consecutive steps!", time: "15 min ago", color: "green" },
     { type: "alert", message: "Naptime delayed by 20 minutes", time: "32 min ago", color: "yellow" },
     { type: "success", message: "Lunch completed - 85% consumed", time: "1 hour ago", color: "blue" }
   ];
@@ -52,36 +52,36 @@ export function Overview() {
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       {/* Header */}
       <div>
         <h1 className="text-purple-900 mb-2">{t("overview.title")}</h1>
-        <p className="text-gray-600">{t("overview.subtitle")}</p>
+        <p className="text-gray-600 text-sm sm:text-base">{t("overview.subtitle")}</p>
       </div>
 
       {/* Quick Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
         {quickStats.map((stat, index) => {
           const Icon = stat.icon;
           return (
-            <Card key={index} className="p-6 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex items-start justify-between mb-4">
-                <div className={`w-12 h-12 ${stat.color} rounded-xl flex items-center justify-center`}>
-                  <Icon className="w-6 h-6 text-white" />
+            <Card key={index} className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-start justify-between mb-3 sm:mb-4">
+                <div className={`w-10 h-10 sm:w-12 sm:h-12 ${stat.color} rounded-xl flex items-center justify-center`}>
+                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <Badge variant="outline" className="border-green-500 text-green-700 text-xs">
                   {stat.change}
                 </Badge>
               </div>
-              <p className="text-gray-600 text-sm mb-1">{stat.label}</p>
-              <p className="text-purple-900">{stat.value}</p>
+              <p className="text-gray-600 text-xs sm:text-sm mb-1">{stat.label}</p>
+              <p className="text-purple-900 text-lg sm:text-xl">{stat.value}</p>
             </Card>
           );
         })}
       </div>
 
       {/* Live Feed & Current Activity */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
         {/* Live Camera */}
         <Card className="lg:col-span-2 p-6 bg-white/80 backdrop-blur-sm border-purple-100 shadow-lg">
           <div className="flex items-center justify-between mb-4">

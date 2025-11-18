@@ -18,31 +18,31 @@ export function ProgressStats() {
   const developmentData = [
     {
       category: "Language",
-      emma: 140,
+      Odaisa: 140,
       average: 100,
       percentile: 92
     },
     {
       category: "Motor Skills",
-      emma: 115,
+      Odaisa: 115,
       average: 100,
       percentile: 78
     },
     {
       category: "Social",
-      emma: 130,
+      Odaisa: 130,
       average: 100,
       percentile: 88
     },
     {
       category: "Cognitive",
-      emma: 125,
+      Odaisa: 125,
       average: 100,
       percentile: 85
     },
     {
       category: "Self-Care",
-      emma: 110,
+      Odaisa: 110,
       average: 100,
       percentile: 72
     }
@@ -85,7 +85,7 @@ export function ProgressStats() {
             {developmentData.map((item) => (
               <div key={item.category} className="p-4 rounded-lg bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-100">
                 <p className="text-sm text-gray-600 mb-1">{item.category}</p>
-                <p className="text-purple-900 mb-1">{item.emma > item.average ? "+" : ""}{item.emma - item.average}%</p>
+                <p className="text-purple-900 mb-1">{item.Odaisa > item.average ? "+" : ""}{item.Odaisa - item.average}%</p>
                 <div className="flex items-center gap-1">
                   <TrendingUp className="w-3 h-3 text-green-500" />
                   <p className="text-xs text-gray-500">{item.percentile}th percentile</p>
@@ -100,7 +100,7 @@ export function ProgressStats() {
                 <PolarGrid stroke="#e9d5ff" />
                 <PolarAngleAxis dataKey="category" />
                 <PolarRadiusAxis angle={90} domain={[0, 150]} />
-                <Radar name="Emma" dataKey="emma" stroke="#ec4899" fill="#ec4899" fillOpacity={0.6} />
+                <Radar name="Odaisa" dataKey="Odaisa" stroke="#ec4899" fill="#ec4899" fillOpacity={0.6} />
                 <Radar name="Age Average" dataKey="average" stroke="#a78bfa" fill="#a78bfa" fillOpacity={0.3} />
                 <Legend />
                 <Tooltip />
